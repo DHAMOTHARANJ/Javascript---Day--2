@@ -1,0 +1,48 @@
+JavaScript is a powerful and versatile programming language that can run both in the browser and on the server. But when we use JavaScript in the browser, we often encounter two important objects: document and window.
+
+The window object
+The window object is the global object in the browser environment. It represents the browser window where the web page is loaded. The window object has many properties and methods that allow us to interact with the browser, such as:
+
+window.location: It returns the location object that contains information about the current URL, such as hostname, pathname, search, hash, etc.
+window.history: It returns the history object that allows us to manipulate the browser history, such as going back, forward, or replacing the current state.
+window.navigator: It returns the navigator object that contains information about the browser, such as name, version, platform, language, etc.
+window.alert(): It displays an alert box with a message and an OK button.
+window.open(): It opens a new browser window or tab with a specified URL and returns a reference to it.
+window.setTimeout(): It executes a function or a code snippet after a specified delay in milliseconds and returns a timer ID.
+window.innerWidth: It returns the width of the browser window’s viewport, excluding the scrollbar.
+window.innerHeight: It returns the height of the browser window’s viewport, excluding the scrollbar.
+The window object is also the default object in the browser, which means that we can access its properties and methods without using the window prefix. For example, we can write location.href instead of window.location.href.
+
+The document object
+The document object is a property of the window object. It represents the HTML document that is loaded in the browser window. The document object has many properties and methods that allow us to access and manipulate the elements in the HTML document, such as:
+
+document.title: It returns or sets the title of the document.
+document.URL: It returns the URL of the document.
+document.cookie: It returns or sets the cookie of the document.
+document.getElementById(): It returns the element that has the specified ID attribute, or null if no such element exists.
+document.getElementsByClassName(): It returns a collection of elements that have the specified class attribute.
+document.getElementsByTagName(): It returns a collection of elements that have the specified tag name.
+document.querySelector(): It returns the first element that matches the specified CSS selector, or null if no such element exists.
+document.querySelectorAll(): It returns a collection of elements that match the specified CSS selector.
+document.createElement(): It creates and returns a new element with the specified tag name.
+document.createTextNode(): It creates and returns a new text node with the specified text content.
+The document object is also the root node of the document tree, which means that it contains all the other nodes (elements, text, comments, etc.) in the document. We can traverse and modify the document tree using the properties and methods of the nodes, such as:
+
+node.parentNode: It returns the parent node of the node, or null if the node has no parent.
+node.childNodes: It returns a collection of child nodes of the node.
+node.firstChild: It returns the first child node of the node, or null if the node has no children.
+node.lastChild: It returns the last child node of the node, or null if the node has no children.
+node.nextSibling: It returns the next sibling node of the node, or null if the node has no next sibling.
+node.previousSibling: It returns the previous sibling node of the node, or null if the node has no previous sibling.
+node.appendChild(): It adds a new child node to the end of the node’s child nodes and returns the added node.
+node.insertBefore(): It inserts a new child node before a specified existing child node and returns the inserted node.
+node.removeChild(): It removes a specified child node from the node and returns the removed node.
+node.replaceChild(): It replaces a specified child node with a new node and returns the replaced node.
+
+The difference
+The main difference between the document and window object is that the document object is a part of the window object, while the window object is not a part of the document object. The document object represents the content of the web page, while the window object represents the container of the web page. The document object is specific to each web page, while the window object is shared by all the web pages in the same browser window or tab.
+
+Another difference is that the document object has a hierarchical structure, while the window object has a flat structure. The document object consists of nodes that form a tree, while the window object consists of properties and methods that are directly accessible. The document object can be accessed through the window object, while the window object cannot be accessed through the document object.
+
+Conclusion
+In this blog post, we have learned what the document and window object are, what properties and methods they have, and how they are different. We have seen that the document object is a property of the window object, and that the document object represents the HTML document, while the window object represents the browser window. We have also seen that the document object has a hierarchical structure, while the window object has a flat structure.
